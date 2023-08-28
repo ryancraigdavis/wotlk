@@ -527,8 +527,8 @@ message IndividualBuffs {
 	bool focus_magic = 22;
 
   // Technically a consume, but there is no shared cooldown with any other item
-  bool scourgebane_draught = 18;
-  bool scourgebane_infusion = 19;
+  bool scourgebane_draught = 25;
+  bool scourgebane_infusion = 26;
 }
 
 message Consumes {
