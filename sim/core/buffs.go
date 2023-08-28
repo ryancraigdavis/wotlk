@@ -287,7 +287,15 @@ func applyBuffEffects(agent Agent, raidBuffs *proto.RaidBuffs, partyBuffs *proto
 	})
 
 	if individualBuffs.ScourgebaneDraught {
-		character.AddStats()
+		if character.CurrentTarget.MobType == proto.MobType_MobTypeUndead {
+			character.PseudoStats.MobTypeAttackPower += 30
+		}
+	}
+
+	if individualBuffs.ScourgebaneInfusion {
+		if character.CurrentTarget.MobType == proto.MobType_MobTypeUndead {
+			character.PseudoStats.MobTypeSpellPower += 15
+		}
 	}
 
 	if partyBuffs.BraidedEterniumChain {
