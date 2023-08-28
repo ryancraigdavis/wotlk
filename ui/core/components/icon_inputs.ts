@@ -179,8 +179,8 @@ export const PowerInfusion = makeMultistateIndividualBuffInput(ActionId.fromSpel
 export const FocusMagic = makeBooleanIndividualBuffInput(ActionId.fromSpellId(54648), 'focusMagic');
 export const TricksOfTheTrade = makeMultistateIndividualBuffInput(ActionId.fromSpellId(57933), 20, 'tricksOfTheTrades');
 export const UnholyFrenzy = makeMultistateIndividualBuffInput(ActionId.fromSpellId(49016), 11, 'unholyFrenzy');
-export const ScourgebaneDraught = makeBooleanIndividualBuffInput(ActionId.fromSpellId(28486), 'ScourgebaneDraught');
-export const ScourgebaneInfusion = makeBooleanIndividualBuffInput(ActionId.fromSpellId(28488), 'ScourgebaneInfusion');
+export const ScourgebaneDraught = makeBooleanIndividualBuffInput(ActionId.fromSpellId(28486),'scourgebaneDraught');
+export const ScourgebaneInfusion = makeBooleanIndividualBuffInput(ActionId.fromSpellId(28488), 'scourgebaneInfusion');
 export const RevitalizeRejuvination = makeMultistateMultiplierIndividualBuffInput(ActionId.fromSpellId(26982), 101, 10, 'revitalizeRejuvination');
 export const RevitalizeWildGrowth = makeMultistateMultiplierIndividualBuffInput(ActionId.fromSpellId(53251), 101, 10, 'revitalizeWildGrowth');
 
