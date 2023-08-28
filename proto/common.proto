@@ -525,6 +525,10 @@ message IndividualBuffs {
 	bool enduring_winter = 18;
 
 	bool focus_magic = 22;
+
+  // Technically a consume, but there is no shared cooldown with any other item
+  bool scourgebane_draught = 18;
+  bool scourgebane_infusion = 19;
 }
 
 message Consumes {

@@ -286,6 +286,10 @@ func applyBuffEffects(agent Agent, raidBuffs *proto.RaidBuffs, partyBuffs *proto
 		stats.SpellPower: 33 * float64(partyBuffs.AtieshWarlock),
 	})
 
+	if individualBuffs.ScourgebaneDraught {
+		character.AddStats()
+	}
+
 	if partyBuffs.BraidedEterniumChain {
 		character.AddStats(stats.Stats{stats.MeleeCrit: 28, stats.SpellCrit: 28})
 	}
